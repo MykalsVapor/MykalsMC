@@ -1,0 +1,526 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+<!-- Added by  --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by  -->
+<head>
+        <title>Player and Premium Ranks</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="How do you get started on the Altitude server? What features are there? How do you use the plugins? This is your complete guide to starting your adventure on the Altitude server!">
+        <meta name="keywords" content="ranks,levels,rankup,rankups,prefixes,levelups,playerranks,drifter,newplayer,veteran,donor,patron,sponsor,youtuber,blogger,supporter,altitude ranks,minecraft,survival,server,servers,community,small,vanilla,semivanilla,dynmap,mcmmo,griefing,1.19.2,altitude,alttd,play,join,find,friends,friendly,simple,private,whitelist,whitelisted,creative,worldedit">
+        <meta name="author" content="Altitude Community">
+        <meta name="theme-color" content="#1f9bde">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- Twitter Card data -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Community-centered Survival Minecraft Server" />
+        <meta name="twitter:description" content="Start your adventure today! We host 1.19.2 survival with features suggested by our community: McMMO, MyPet, Dynmap, &amp; economy. Monthly server events..." />
+        <!-- Twitter Summary card images must be at least 120x120px -->
+        <meta name="twitter:image" content="assets/img/random/seo.jpg" />
+        <!-- Open Graph data -->
+        <meta property="og:title" content="Community-centered 1.19.2 Survival Minecraft Server" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="index.html" />
+        <meta property="og:image" content="assets/img/random/seo.jpg" />
+        <meta property="og:description" content= "Start your adventure today! We host 1.19.2 survival with features suggested by our community: McMMO, MyPet, Dynmap, &amp; economy. Monthly server events..." />
+        <meta property="og:site_name" content="Altitude Community" />
+
+        <link rel="stylesheet" href="css/master.css">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="icon" type="image/png" href="favicon.png"/>
+        <script src="js/darkmode.js"></script>
+        <style>
+            header{
+                height: 460px;
+                background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("assets/img/backgrounds/118fjord.png");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            #subheaderDonor{
+            	height: 350px;
+            	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("assets/img/backgrounds/newtown.jpg");
+            	background-position: center;
+            	background-repeat: no-repeat;
+            	background-size: cover;
+            	text-align: center;
+            }
+
+            #subheaderCommunity{
+            	height: 350px;
+            	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://alttd.com/404");
+            	background-position: center;
+            	background-repeat: no-repeat;
+            	background-size: cover;
+            	text-align: center;
+            }
+
+            .paragraph{
+            	width: 100%;
+            }
+
+            td,
+            th {
+                font-family: 'opensans', sans-serif;
+            }
+
+            table {
+              border-collapse: collapse;
+              margin: 0;
+              padding: 0;
+              width: 100%;
+              table-layout: fixed;
+            }
+
+            table tr {
+              padding: .35em;
+            }
+
+            table th,
+            table td {
+              padding: .625em;
+              text-align: center;
+            }
+
+            table th {
+              font-size: .85em;
+            }
+
+            .perks {
+              text-align: left;
+              padding-left: 105px;
+            }
+
+            .tabletitle {
+                font-family: 'opensans-bold', sans-serif;
+            	font-size: 1.5em;
+            }
+
+            .ranktitle {
+                font-family: 'opensans-bold', sans-serif;
+            }
+
+            @media (max-width: 1200px) {
+                .perks {
+                  padding-left: 80px;
+                }
+            }
+
+            @media (max-width: 900px) {
+                .perks {
+                  padding-left: 50px;
+                }
+            }
+
+            @media (max-width: 690px) {
+                main .container {
+                    width: 80% !important;
+                }
+            }
+
+            @media screen and (max-width: 600px) {
+              table {
+                border: 0;
+              }
+
+              table th,
+              table td {
+                padding: .400em;
+              }
+
+              table thead {
+                border: none;
+                clip: rect(0 0 0 0);
+                height: 1px;
+                margin: -1px;
+                overflow: hidden;
+                padding: 0;
+                position: absolute;
+                width: 1px;
+              }
+
+              table tr {
+                display: block;
+                margin-bottom: .625em;
+              }
+
+              table td {
+                display: block;
+                font-size: .8em;
+                text-align: right;
+              }
+
+              table td::before {
+                content: attr(data-label);
+                float: left;
+                font-weight: bold;
+                text-transform: uppercase;
+              }
+
+              table td:last-child {
+                border-bottom: 0;
+              }
+
+              .perks {
+                text-align: right;
+                padding-left: 6px;
+              }
+            }
+        </style>
+    </head>
+    <body>
+<header id="top">
+<nav id="nav">
+    <div class="container">
+        <div id="mobilenav">
+            <div id="menutoggle">
+            <!--A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it.-->
+                <input type="checkbox" />
+                <!--Some spans to act as a hamburger. They are acting like a real hamburger, not that McDonalds stuff.-->
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <!--Too bad the menu has to be inside of the button but hey, it's pure CSS magic.-->
+                <ul id="mobilenavlist">
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">Features</a>
+                        <ul class="mobiledd">
+                            <li><a href="map.html">Map</a></li>
+                            <li><a href="economy.html">Economy</a></li>
+                            <!-- <li><a href="/events.php">Events</a></li> -->
+                            <li><a href="claiming.html">Land Claiming</a></li>
+                            <li><a href="mypet.html">MyPet</a></li>
+                            <li><a href="warps.html">Warps</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Reference</a>
+                        <ul class="mobiledd">
+                        	<li><a href="guide.html">Guide Book</a></li>
+                            <!-- <li><a href="/faq.php">FAQ</a></li> -->
+                        	<li><a href="ranks.html">Ranks</a></li>
+                        	<li><a href="rules.html">Rules</a></li>
+                        	<li><a href="commandlist.html">Command list</a></li>
+                            <li><a href="mapart.html">Mapart</a></li>
+                        	<li><a href="lag.html">Reducing Lag</a></li>
+                            <li><a href="staffpowers.html">Staff Powers</a></li>
+            		        <li><a href="nicknames.html">Nicknames</a></li>
+                        	<li><a href="bans/index.html">Bans</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://discord.gg/ymYurTE4Qn">Discord</a></li>
+                    <li><a href="http://shop.mykalsmc.tk/category/351117/">Donate</a></li>
+                    <li>
+                        <a href="#">MyKals</a>
+                        <ul class="mobiledd">
+                            <li><a href="team.html">Team</a></li>
+                            <li><a href="appeal.html">Ban Appeal</a></li>
+                            <li><a href="blog/index.html">Blog</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <a href="index.html"><img src="" alt=""></a>
+        <ul id="navlist">
+            <li class="navli"><a  class="navlink" href="index.html">Home</a></li>
+            <li class="navli">
+
+            </li>
+            <li class="navli">
+                <span id="currentpage" class="navlink fakelink">Reference</span>
+                <ul class="dropdown">
+                    <li class="navli"><a class="navlink2" href="ranks.html">Ranks</a></li>
+                    <li class="navli"><a class="navlink2" href="rules.html">Rules</a></li>
+                </ul>
+            </li>
+            <li class="navli"><a class="navlink" target="_blank" rel="noopener" href="https://peerboard.com/598211358/">Forum</a></li>
+            <li class="navli"><a class="navlink" target="_blank" rel="noopener" href="https://discord.gg/ymYurTE4Qn">Discord</a></li>
+            <li class="navli">
+                <a class="navlink" target="_blank" rel="noopener" href="http://shop.mykalsmc.tk/category/351117">Store</a>
+            </li>
+            <li class="navli">
+
+            <li class="navli">
+                <a  class="navlink fakelink">Mykals</a>
+                <ul class="dropdown">
+                    <li class="navli"><a class="navlink2" href="about.html">About us</a></li>
+                    <li class="navli"><a class="navlink2" href="team.html">Team</a></li>
+                    <li class="navli"><a class="navlink2" target="_blank" rel="noopener" href="appeal.html">Ban Appeal</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="switch-div" style="z-index: 1;">
+            <!--
+                Darkmode switch created by Musthaq Ahamad
+                at https://codepen.io/haxzie/pen/xxKNEGM
+            -->
+            <p id = "acz">Mykals</p>
+            <script>
+            document.getElementById("acz").innerHTML = "Signed in as: "+localStorage.theValue;
+            </script>
+            <br>
+            <label class="switch">
+                <input type="checkbox" onchange="toggleTheme()" id="slider">
+                <span class="slider round"></span>
+            </label>
+            <!-- <button id="switch" onclick="toggleTheme()">Switch</button> -->
+        </div>
+    </div>
+</nav>
+            <div class="title">
+              <h1>Ranks</h1>
+              <h2>Ranks are paid items people buy to support the server. Donate today at: <a href="http://shop.mykalsmc.tk/">shop.mykalsmc.tk</a>. Thank you!</h2>
+
+            </div>
+      </header>
+        <main>
+            <section class="darkmodeSection">
+                <div class="container">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th scope="col" class="tabletitle">Rank</th>
+                          <th scope="col" class="tabletitle">Requirements</th>
+                          <th scope="col" class="tabletitle">Perks</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td data-label="Rank" class="ranktitle"><img src="images/Coal.jpg" width="150" height="150" alt=""/>[<span class="">Coal</span>]</td>
+                          <td data-label="Requirements">Get the free rank!</td>
+                          <td data-label="Perks" class="perks">Coal Rank grants basic privileges to interact with our server.</td>
+                        </tr>
+                        <tr>                        </tr>
+                      </tbody>
+                    </table>
+<table>
+        <tbody>
+                        <tr>                        </tr>
+        </tbody>
+                    </table>
+<table>
+        <tbody>
+                        <tr>
+                          <td scope="row" data-label="Rank" class="ranktitle">[<img src="images/Copper.jpg" width="150" height="150" alt=""/><span class="">Copper Rank</span>]</td>
+                          <td data-label="Requirements">Buy copper rank.</td>
+                          <td data-label="Perks" class="perks">COPPER Prefix<br><br>Access to RANK-ONLY Group in Discord<br><br>500 extra claim blocks<br><br>Get one extra home (4 total)<br><br>/pv 1 - Access a chest that can be opened from anywhere.<br><br>/AFK - Shows Player as "Away"<br><br>Won't be kicked for being AFK<br><br>Ability to mine mob spawners with a Diamond Silk Touch pickaxe.<br><br>/Me - Tell people what you are doing<br><br>/Compass - Show where you're looking N,S,E, or W<br><br>/Near - See what players are close to you<br><br>Earn $60 of server money every 10 minutes up to $4,320 per day.<br><br></td>
+                        </tr>
+                        <tr>
+                          <td scope="row" data-label="Rank" class="ranktitle"><img src="images/Iron.jpg" width="150" height="150" alt=""/>[<span class="">Iron Rank</span>]</td>
+                          <td data-label="Requirements">Buy iron rank.</td>
+                          <td data-label="Perks" class="perks">IRON Prefix
+                            
+                            <br><br>All previous perks and commands from lower ranks
+                            
+                            <br><br>2,500 extra claim blocks (3,000 total)
+                            
+                            <br><br>Get one extra home (5 total)
+                            
+                            <br><br>/pv 2 - Get one additional player vault. (2 total)
+                            
+                            <br><br>/Nick - Change your display name
+                            
+                            <br><br>/Hat command - Put anything on your head
+                            
+                            <br><br>/Depth - How many blocks above sea level are you
+                            
+                            <br><br>/GetPOS - Show the location of your player
+                            
+                            <br><br>/Seen command to know when a player was last online
+                            
+                            <br><br>Get a Extra /AH Slots (6 total)
+                            
+                          <br><br>Earn $70 of server money every 10 minutes up to $5,040 per day.<br><br></td>
+                        </tr>
+                        <tr>
+                          <td scope="row" data-label="Rank" class="ranktitle"><img src="images/Gold.jpg" width="150" height="150" alt=""/>[<span class="">Gold Rank</span>]</td>
+                          <td data-label="Requirements">Buy Gold Rank</td>
+                          <td data-label="Perks" class="perks">GOLD Prefix
+                            
+                            <br><br>All previous perks and commands from lower ranks
+                            
+                            <br><br>5,000 extra claim blocks (8,000 total)
+                            
+                            <br><br>Get one extra home (5 total)
+                            
+                            <br><br>/pv 3 - Get one additional player vault. (3 total)
+                            
+                            <br><br>/pp - Add particles to your player
+                            
+                            <br><br>/Enderchest command - Access an enderchest at any time
+                            
+                            <br><br>/Workbench - Opens up a workbench at any time
+                            
+                            <br><br>/Condense - Turn all items into easily storable blocks with just one command
+                            
+                            <br><br>/Disposal - Get rid of any items you have anywhere you are
+                            
+                            <br><br>/Suicide - A bit morbid if you ask me...
+                            
+                            <br><br>Get a Extra /AH Slots (7 total)
+                            
+                          <br><br>Earn $80 of server money every 10 minutes up to $5,760 per day.<br><br></td>
+                        </tr>
+                        <tr>
+                          <td scope="row" data-label="Rank" class="ranktitle"><img src="images/Diamond.jpg" width="150" height="150" alt=""/>[<span class="">Diamond Rank</span>]</td>
+                          <td data-label="Requirements">Buy Diamond Rank</td>
+                          <td data-label="Perks" class="perks">DIAMOND Prefix
+                            
+                            <br><br>All previous perks and commands from lower ranks
+                            
+                            <br><br>15,000 extra claim blocks (23,000 total)
+                            
+                            <br><br>Get one extra home (6 total)
+                            
+                            <br><br>/pv 4 - Get one additional player vault. (4 total)
+                            
+                            <br><br>/Heal - Get full health at any time
+                            
+                            <br><br>/Feed - Never be hungry again
+                            
+                            <br><br>/Top - Teleports you to the highest block at your current location
+                            
+                            <br><br>/pWeather - Change the weather for your player
+                            
+                            <br><br>/pTime - Change the time for your player
+                            
+                            <br><br>Get a Extra /AH Slots (8 total)
+                            
+                          <br><br>Earn $90 of server money every 10 minutes up to $6,480 per day.<br><br></td>
+                        </tr>
+                        <tr>
+                          <td scope="row" data-label="Rank" class="ranktitle"><img src="images/Emerald.jpg" width="150" height="150" alt=""/>[<span class="">Emerald Rank</span>]</td>
+                          <td data-label="Requirements">Buy emerald rank.</td>
+                          <td data-label="Perks" class="perks">EMERALD Prefix
+                            
+                            <br><br>All previous perks and commands from lower ranks
+                            
+                            <br><br>25,000 extra claim blocks (48,000 total)
+                            
+                            <br><br>Get four extra home (10 total)
+                            
+                            <br><br>Ability to use color in chat
+                            
+                            <br><br>/pv 5 - Get one additional player vault. (5 total)
+                            
+                            <br><br>/eglow - Add a colored glow to your player
+                            
+                            <br><br>/Fly - Allows you to fly around the world similar to creative mode
+                            
+                            <br><br>/Back - Quickly and easily return to your previous location
+                            
+                            <br><br>/Skull - Set the owner of a player skull
+                            
+                            <br><br>/Itemdb - Find out how many uses your tools have left before they break
+                            
+                            <br><br>Get a Extra /AH Slots (9 total)
+                            
+                          <br><br>Earn $100 of server money every 10 minutes up to $7,200 per day.</td>
+                        </tr>
+                        <tr>
+                          <td scope="row" data-label="Rank" class="ranktitle"><img src="images/VIP.jpg" width="190" height="165" alt=""/>[<span class="">VIP</span>]</td>
+                          <td data-label="Requirements">Buy Vip</td>
+                          <td data-label="Perks" class="perks">VIP Prefix
+                            
+                            <br><br>All previous commands from lower ranks (Kits do not stack. You only get access to the kit from your current rank.)
+                            
+                            <br><br>Access to VIP-Only Rank Chat on Discord
+                            
+                            <br><br>52,000 extra claim blocks (100,000 total)
+                            
+                            <br><br>Get ten extra homes (20 total)
+                            
+                            <br><br>/pv 6 - Get one additional player vault. (6 total)
+                            
+                            <br><br>Unlimited /pw - Show off your creations to allow anyone to warp to you
+                            
+                            <br><br>/Kittycannon- Shoot kitty cats at people
+                            
+                            <br><br>Earn $110 of server money every 10 minutes up to $7,920 per day
+                            
+                            <br><br>/Sell All - Allows you to sell EVERYTHING in your inventory. Use with caution.
+                            
+                            <br><br>Get a Extra /AH Slots (10 total)
+                            
+                            <br><br>/Kit VIP Every Week
+                            
+                            <br><br>1 Trench Pickaxe (30 Uses)
+                            
+                            1 Harvester Hoe (30 Uses)
+                            
+                            1 Legendary Key
+                            
+                            1 Diamond Pickaxe (Efficiency V, Fortune II, Unbreaking II)
+                            
+                            1 Diamond Shovel (Efficiency V Fortune II, Unbreaking II)
+                            
+                          1 Diamond Axe (Efficiency V Fortune II, Unbreaking II)<br></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <a href="#top" id="scrollupbutton">
+                <span></span>
+                <p style="display: none;">Scroll Down</p>
+            </a>
+        </main>
+<footer>
+  <div id="footer">
+    <div id="footerinner">
+      <div id="footertext">
+        <h2>ABOUT US</h2>
+        <p>Mykal's MC Server is a new 1.19.2 Survival style server with an economy, voting system, grief prevention, land claims, crates, kits, auction house, shop, mcmmo, skyblock, bedwars, and much more to be added soon. We are currently looking for helpers and admins to help make this a better place for us all.</p>
+        <div class="followus" style="height: 35px; display: flex; align-items: flex-end;">
+          <a target="_blank" rel="noopener" href="https://discord.gg/ymYurTE4Qn">
+          <img src="assets/img/logos/discord.png" alt="Discord Button"></img>
+          </a>
+        </div>
+      </div>
+      <div class="footernav">
+        <h2>COMMUNITY</h2>
+        <ul>
+          <li><a target="_blank" rel="noopener" href="https://discord.gg/ymYurTE4Qn">Discord</a></li>
+        </ul>
+      </div>
+      <div class="footernav">
+        <h2>SERVER</h2>
+        <ul>
+          <li><a href="team.html">Staffing Team</a></li>
+        </ul>
+      </div>
+    </div>
+    <p id="copyright">Copyright © 2022 SevenFlask. All rights Reserved. Not affiliated with Mojang.</p>
+  </div>
+</footer>
+        <!-- JQuery and related implementation -->
+        <script type="text/javascript">
+            function downloadJSAtOnload() {
+                var element = document.createElement("script");
+                element.src = "js/jquery-3.2.1.min.js";
+                document.body.appendChild(element);
+                var element2 = document.createElement("script");
+                element2.src = "js/index.js";
+                document.body.appendChild(element2);
+                var element3 = document.createElement("script");
+                element3.src = "../s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56b811aeca643dad";
+                document.body.appendChild(element3);
+            }
+            if (window.addEventListener)
+                window.addEventListener("load", downloadJSAtOnload, false);
+            else if (window.attachEvent)
+                window.attachEvent("onload", downloadJSAtOnload);
+            else window.onload = downloadJSAtOnload;
+        </script>
+        <script src="js/darkmodefix.js"></script>
+    </body>
+
+
+</html>
