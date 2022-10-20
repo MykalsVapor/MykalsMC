@@ -1,0 +1,122 @@
+footer {
+    background-color: var(--footer-color);
+    transition: 0.5s ease;
+}
+
+#footer {
+    padding: 80px 0;
+    width: 80%;
+    max-width: 1020px;
+    margin: auto;
+}
+
+#footerinner {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footertext {
+    flex-basis: 45%;
+    margin-right: 60px;
+}
+
+.footernav {
+    flex-grow: 1;
+    border-left: 1px solid rgb(19, 19, 19);
+    padding-left: 10px;
+}
+
+.footernav li {
+    padding-bottom: 5px;
+}
+
+footer ul, footer p {
+    list-style: none;
+    font-size: 0.9em;
+    color: rgb(168, 168, 168);
+    font-family: 'opensans',sans-serif;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    color: var(--white);
+}
+
+#copyright {
+    margin-top: 50px;
+}
+
+.followus {
+    padding-top: 15px;
+}
+
+.followus img {
+    margin-right: 5px;
+    float: left;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+}
+
+.followus img:hover {
+    margin-bottom: 5px;
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+}
+
+@media (max-width: 1150px) {
+    #footerinner {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    #footertext {
+        flex: 1 1 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .footernav {
+        border-left: none;
+        padding-left: 0px;
+        padding-bottom: 15px;
+        min-width: 200px;
+    }
+
+    .followus {
+        width: 100px;
+        margin: 0 auto;
+    }
+
+    .footernav {
+        border-left: none;
+        padding-left: 0px;
+        padding-bottom: 15px;
+        min-width: 200px;
+    }
+
+    #copyright {
+        margin-top: 30px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1000px) {
+
+}
+
+@media (max-width: 690px) {
+
+}
+
+@media (min-width: 690px) {
+
+}
