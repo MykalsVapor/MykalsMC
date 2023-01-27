@@ -103,7 +103,16 @@
         <header id="top">
 
           <nav id="nav">
-              <div class="container">
+            <div class="container">
+              <p class = "movewelcome2" id = "acz">Mykals</p>
+              <script>
+              document.getElementById("acz").innerHTML = "Welcome: "+localStorage.theValue;
+              </script>
+              <div class="switch-div" style="z-index: 1;">
+              <label class="switch2">
+                  <input type="checkbox" onchange="toggleTheme()" id="slider">
+                  <span class="slider round"></span>
+              </label>
                   <div id="mobilenav">
                       <div id="menutoggle">
                       <!--A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it.-->
@@ -127,11 +136,11 @@
                                   </ul>
                               </li>
                               <li>
-                                  <a href="#">Reference</a>
+                                  <li><a href="rules.html">Rules</a></li>
                                   <ul class="mobiledd">
                                   	<li><a href="guide.html">Guide Book</a></li>
                                       <!-- <li><a href="/faq.php">FAQ</a></li> -->
-                                  	<li><a href="ranks.html">Ranks</a></li>
+                                  	<!--<li><a href="ranks.html">Ranks</a></li> -->
                                   	<li><a href="rules.html">Rules</a></li>
                                   	<li><a href="commandlist.html">Command list</a></li>
                                       <li><a href="mapart.html">Mapart</a></li>
@@ -147,7 +156,7 @@
                                   <a href="#">MyKals</a>
                                   <ul class="mobiledd">
                                       <li><a href="team.html">Team</a></li>
-                                      <li><a href="appeal.html">Ban Appeal</a></li>
+                                      <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfFTJ7CKuA2u5IRYJ8KDvF23Cm0fxA5knncdJX2D2dThETFpw/viewform">Ban Appeal</a></li>
                                       <li><a href="blog/index.html">Blog</a></li>
                                   </ul>
                               </li>
@@ -161,9 +170,9 @@
 
                       </li>
                       <li class="navli">
-                          <span id="currentpage" class="navlink fakelink">Reference</span>
+                          <li class="navli"><a id="currentpage" class="navlink" href="rules.html">Rules</a></li>
                           <ul class="dropdown">
-                              <li class="navli"><a class="navlink2" href="ranks.html">Ranks</a></li>
+                              <!--<li class="navli"><a class="navlink2" href="ranks.html">Ranks</a></li> -->
                               <li class="navli"><a class="navlink2" href="rules.html">Rules</a></li>
                           </ul>
                       </li>
@@ -173,32 +182,17 @@
                           <a class="navlink" target="_blank" rel="noopener" href="http://shop.mykalsmc.tk/category/351117">Store</a>
                       </li>
                       <li class="navli">
->
+
                       <li class="navli">
                           <a  class="navlink fakelink">Mykals</a>
                           <ul class="dropdown">
                               <li class="navli"><a class="navlink2" href="about.html">About us</a></li>
                               <li class="navli"><a class="navlink2" href="team.html">Team</a></li>
-                              <li class="navli"><a class="navlink2" target="_blank" rel="noopener" href="appeal.html">Ban Appeal</a></li>
+                              <li class="navli"><a class="navlink2" target="_blank" rel="noopener" href="https://docs.google.com/forms/d/e/1FAIpQLSfFTJ7CKuA2u5IRYJ8KDvF23Cm0fxA5knncdJX2D2dThETFpw/viewform">Ban Appeal</a></li>
                           </ul>
                       </li>
                   </ul>
-                  <div class="switch-div" style="z-index: 1;">
-                      <!--
-                          Darkmode switch created by Musthaq Ahamad
-                          at https://codepen.io/haxzie/pen/xxKNEGM
-                      -->
-                      <p id = "acz">Mykals</p>
-                      <script>
-                      document.getElementById("acz").innerHTML = "Signed in as: "+localStorage.theValue;
-                      </script>
-                      <br>
-                      <label class="switch">
-                          <input type="checkbox" onchange="toggleTheme()" id="slider">
-                          <span class="slider round"></span>
-                      </label>
-                      <!-- <button id="switch" onclick="toggleTheme()">Switch</button> -->
-                  </div>
+
               </div>
           </nav>
             <div class="title">
@@ -305,7 +299,7 @@
           <div id="footerinner">
             <div id="footertext">
               <h2>ABOUT US</h2>
-              <p>Mykal's MC Server is a Fabric 1.19.2 Survival style server. We require you to have the Create Mod and Oh The Biomes You'll Go Refabricated, along with their respective dependencies in order to login. [TerraBlender (Fabric) and FabricAPI]. It is also recommended to grab JEI (Just Enough Items) in order to view the Create Mod recipes. We are currently looking for Mods to help with the server.</p>
+              <p>Mykal's MC Server is a new 1.19.2 Survival moded server with the famous create mod. We are currently looking for helpers and admins to help make this a better place for us all.</p>
               <div class="followus" style="height: 35px; display: flex; align-items: flex-end;">
                 <a target="_blank" rel="noopener" href="https://discord.gg/ymYurTE4Qn">
                 <img src="assets/img/logos/discord.png" alt="Discord Button"></img>

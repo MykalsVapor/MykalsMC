@@ -232,7 +232,17 @@
         <header id="top">
 
 <nav id="nav">
+
     <div class="container">
+      <p class = "movewelcome" id = "acz">Mykals</p>
+      <script>
+      document.getElementById("acz").innerHTML = "Welcome: "+localStorage.theValue;
+      </script>
+      <div class="switch-div" style="z-index: 1;">
+      <label class="switch2">
+          <input type="checkbox" onchange="toggleTheme()" id="slider">
+          <span class="slider round"></span>
+      </label>
         <div id="mobilenav">
             <div id="menutoggle">
             <!--A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it.-->
@@ -246,11 +256,11 @@
                     <li><a href="index.html">Home</a></li>
 
                     <li>
-                        <a href="#">Reference</a>
+                        <li><a href="rules.html">Rules</a></li>
                         <ul class="mobiledd">
                         	<li><a href="guide.html">Guide Book</a></li>
                             <!-- <li><a href="/faq.php">FAQ</a></li> -->
-                        	<li><a href="ranks.html">Ranks</a></li>
+                        	<!--<li><a href="ranks.html">Ranks</a></li> -->
                         	<li><a href="rules.html">Rules</a></li>
                         </ul>
                     </li>
@@ -263,7 +273,7 @@
                             <li><a href="about.html">About us</a></li>
                             <li><a href="team.html">Team</a></li>
                             <li><a href="community.html">Community</a></li>
-                            <li><a href="appeal.html">Ban Appeal</a></li>
+                            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfFTJ7CKuA2u5IRYJ8KDvF23Cm0fxA5knncdJX2D2dThETFpw/viewform">Ban Appeal</a></li>
                             <li><a href="blog/index.html">Blog</a></li>
                         </ul>
 
@@ -279,9 +289,9 @@
             <li class="navli"><a id="currentpage" class="navlink" href="index.html">Home</a></li>
 
             <li class="navli">
-                <span  class="navlink fakelink">Reference</span>
+                <li class="navli"><a class="navlink" href="rules.html">Rules</a></li>
                 <ul class="dropdown">
-                    <li class="navli"><a class="navlink2" href="ranks.html">Ranks</a></li>
+                    <!--<li class="navli"><a class="navlink2" href="ranks.html">Ranks</a></li> -->
                     <li class="navli"><a class="navlink2" href="rules.html">Rules</a></li>
 
                 </ul>
@@ -297,25 +307,19 @@
                 <ul class="dropdown">
                     <li class="navli"><a class="navlink2" href="about.html">About us</a></li>
                     <li class="navli"><a class="navlink2" href="team.html">Team</a></li>
-                    <li class="navli"><a class="navlink2" target="_blank" rel="noopener" href="appeal.html">Ban Appeal</a></li>
-      
+                    <li class="navli"><a class="navlink2" target="_blank" rel="noopener" href="https://docs.google.com/forms/d/e/1FAIpQLSfFTJ7CKuA2u5IRYJ8KDvF23Cm0fxA5knncdJX2D2dThETFpw/viewform">Ban Appeal</a></li>
+
                 </ul>
             </li>
         </ul>
-        <div class="switch-div" style="z-index: 1;">
+
             <!--
                 Darkmode switch created by Musthaq Ahamad
                 at https://codepen.io/haxzie/pen/xxKNEGM
             -->
-            <p id = "acz">Mykals</p>
-            <script>
-            document.getElementById("acz").innerHTML = "Signed in as: "+localStorage.theValue;
-            </script>
+
             <br>
-            <label class="switch">
-                <input type="checkbox" onchange="toggleTheme()" id="slider">
-                <span class="slider round"></span>
-            </label>
+
 
 
             <!-- <button id="switch" onclick="toggleTheme()">Switch</button> -->
@@ -334,7 +338,7 @@
         </header>
         <main>
             <section id="scrollingpoint" style="background: #202020; text-align: center; padding: 80px 0px;">
-                <h2 style="color: white;">Server IP: MykalsMC.apexmc.co</h2>
+                <h2 style="color: white;">Server IP: play.MykalsMC.com</h2>
                 <button type="button" style="margin-top: 50px;" class="button-outer" onclick="copyToClipboard()">
                     <span class="button-inner" id="copybutton">Copy IP</span>
                 </button>
@@ -343,7 +347,7 @@
                 <div class="container">
                     <div class="paragraph">
                         <h2>About</h2>
-                        <p>Mykal's MC Server is a Fabric 1.19.2 Survival style server. We require you to have the Create Mod and Oh The Biomes You'll Go Refabricated, along with their respective dependencies in order to login. [TerraBlender (Fabric) and FabricAPI]. It is also recommended to grab JEI (Just Enough Items) in order to view the Create Mod recipes. We are currently looking for Mods to help with the server.</p>
+                        <p>Mykal's MC Server is a new 1.19.2 Survival moded server with the famous create mod. We are currently looking for helpers and admins to help make this a better place for us all.</p>
                     </div>
                     <img src="assets/img/items/bookquill.png" style="width: 150px; align-self: center; margin: 0 auto;" alt="Alternative Altitude Server Logo">
                 </div>
@@ -379,23 +383,11 @@
             </section>
             <section id="section2">
                 <div class="customcontainer">
-                    <h2 style="color: white; padding-bottom: 35px; font-size:2.8em">Gamemodes</h2>
-                    <p style="color: white; padding-bottom: 35px; margin: auto; font-size: 1.1em;">Mykals is built by the community, for the community. We take feedback from members to keep inproving on are server!</p>
-                    <div id="customcontainer2">
-                        <div class="customcontainer3">
-                            <h2>McMMO</h2>
-                            <p>The most requested GameMode on Mykals, level up yourself and your pet with these MMO-based plugins!</p>
-                        </div>
-                        <div class="customcontainer3">
-                            <h2>Survival </h2>
-                            <p>Interact with the world and the players in it in! Everything you build here is safe with are top of the notch land claiming plugins!.</p>
-                            </a>
-                        </div>
-                        <div class="customcontainer3">
-                            <h2>BedWars</h2>
-                            <p>Bedwars is a teamwork PVP game, you will be battling your opponents on islands in the sky, protect your bed and try to destroy your opponents' bed to prevent them from respawning, beat all the opponents to win the game!</p>
-                        </div>
-                    </div>
+                    <h2 style="color: white; padding-bottom: 35px; font-size:2.8em">Why us?</h2>
+                    <p style="color: white; padding-bottom: 35px; margin: auto; font-size: 1.1em;">Mykals is built by the community, for the community. We take feedback from members to keep inproving on are server!
+                      Interact with the world and the players in it in! Everystep of the way you are finding out somthing new with are create mod which adds a variety of tools and blocks for Building, Decoration, and Aesthetic Automation.
+                    </p>
+
                 </div>
             </section>
 
@@ -408,7 +400,7 @@
             <section class="darkmodeSection">
                 <div class="customcontainer">
                     <img src="assets/img/logos/log.png" style="width: 121px;" alt="Alternative Altitude Server Logo">
-                    <h2 style="margin: 20px 0; font-size: 1.8em;">MykalsMC.apexmc.co</h2>
+                    <h2 style="margin: 20px 0; font-size: 1.8em;">play.MykalsMC.com</h2>
                     <button type="button" class="button-outer" onclick="copyToClipboard()">
                         <span class="button-inner" id="copybutton2">Copy IP</span>
                     </button>
@@ -424,7 +416,7 @@
     <div id="footerinner">
       <div id="footertext">
         <h2>ABOUT US</h2>
-        <p>Mykal's MC Server is a new 1.19.2 Survival style server with an economy, voting system, grief prevention, land claims, crates, kits, auction house, shop, mcmmo, skyblock, bedwars, and much more to be added soon. We are currently looking for helpers and admins to help make this a better place for us all.</p>
+        <p>Mykal's MC Server is a new 1.19.2 Survival moded server with the famous create mod. We are currently looking for helpers and admins to help make this a better place for us all.</p>
         <div class="followus" style="height: 35px; display: flex; align-items: flex-end;">
           <a target="_blank" rel="noopener" href="https://discord.gg/ymYurTE4Qn">
           <img src="assets/img/logos/discord.png" alt="Discord Button"></img>

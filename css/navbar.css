@@ -253,7 +253,30 @@ nav img {
     width: 60px;
     height: 25px;
 }
+.switch2 {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 25px;
+    right: 1250px;
+    top: 20px;
+}
+.movewelcome{
+    position: relative;
+    display: inline-block;
 
+    right: 205px;
+
+
+}
+.movewelcome2{
+    position: relative;
+    display: inline-block;
+
+    right: 160px;
+    top: 10px;
+
+}
 .switch-div{
     position: absolute;
     right: 40px;
@@ -346,6 +369,7 @@ input:checked + .slider:before {
     #nav {
         height: 150px;
         position: relative;
+
     }
 
     #nav.active {
@@ -373,16 +397,20 @@ input:checked + .slider:before {
 
 @media (max-width: 690px) {
     #navlist {
-        display: none;
+        display: inline-block;
+        text-align: center;
+
     }
 
     #nav {
-        height: 90px;
+        height: 900px;
         position: fixed;
+
     }
 
     #nav.active {
         height: 90px;
+
     }
 
     #nav img {

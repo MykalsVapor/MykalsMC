@@ -559,13 +559,20 @@ main .container {
 	padding-bottom: 20px;
 	font-size: 2em;
 }
+.sectiontitle2 {
+	flex: 0 76%;
+	text-align: center;
+	padding-bottom: 20px;
+	font-size: 2em;
+}
 
 .member {
-	width: 33%;
+	width: 10%;
 	min-width: 250px;
 	padding-bottom: 50px;
 	text-align: center;
 }
+
 
 .member img {
 	padding-bottom: 15px;
@@ -697,7 +704,7 @@ main .container {
 
 @media (max-width: 1150px) {
 	.container {
-        width: 90%;
+        width: 120%;
     }
 
 	h1{
@@ -718,7 +725,7 @@ main .container {
     }
 
     .container, .customcontainer, .columnsection {
-    	width: 90%;
+    	width: 120%;
     }
 
 	#headerimg {

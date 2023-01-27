@@ -15,7 +15,7 @@ function playVideo() {
 
 function copyToClipboard() {
 	var aux = document.createElement("input");
-	aux.setAttribute("value", "MykalsMC.apexmc.co");
+	aux.setAttribute("value", "play.MykalsMC.com");
 	document.body.appendChild(aux);
 	aux.select();
 	document.execCommand("copy");
