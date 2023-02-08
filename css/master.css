@@ -476,16 +476,16 @@ main .container {
 }
 
 #scrollupbutton {
-	opacity: 0.0;
-	width: 60px;
+  	opacity: 0.0;
+   	width: 60px;
 	height: 60px;
-	border-radius: 5px;
-	background-color: var(--link-color);
-	position: fixed;
-	right: 0px;
-	left: 30px;
-	bottom: 30px;
-	transition: opacity 0.3s, 0.5s ease;
+    	border-radius: 5px;
+    	background-color: var(--link-color);
+    	position: fixed;
+    	right: 0px; /if you want to move the arrow to the right side of the screen change right to 30 and left to 0/
+    	left: 30px; /if you want to move the arrow to the left side of the screen change left to 30 and right to 0/
+    	bottom: 30px;
+    	transition: opacity 0.3s, 0.5s ease;
 }
 
 #scrollupbutton span::after {
