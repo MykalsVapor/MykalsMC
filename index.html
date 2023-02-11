@@ -207,6 +207,8 @@
         </style>
     </head>
 <body onload="start()">
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+
   <header id="top">
 
 
@@ -244,7 +246,14 @@
 
 
           <p class = "movewelcome" id = "acz">MykalsMC</p>
-
+          <script defer>
+            document.getElementById("acz").innerHTML = "Welcome: "+localStorage.theValue;
+          </script>
+          <div class="switch-div" style="z-index: 1;">
+          <label class="switch2">
+              <input type="checkbox" onchange="toggleTheme()" id="slider">
+              <span class="slider round"></span>
+          </label>
 
           <script defer>
 
@@ -330,7 +339,7 @@
             </section>
             <section class="darkmodeSection">
                 <div class="container">
-                    <div class="paragraph">
+                    <div class="paragraph2">
                         <h2>About</h2>
                         <p>Mykal's MC Server is a Forge 1.19.2 Survival style server that utilizes the Better Minecraft BMC3 modpack.</p>
                     </div>
@@ -425,11 +434,12 @@
 </footer>
         <!-- JQuery and related implementation -->
 
+        <script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-63e7e7d8cfc6a598"></script>
 
     </body>
 
 
-</html> -->
+</html>
 <script type="text/javascript" defer>
     function downloadJSAtOnload() {
         var element = document.createElement("script");
@@ -452,11 +462,3 @@
 
 <script src="js/darkmode.js" defer></script>
 <script src="js/carusel.js" defer></script>
-<script defer>
-document.getElementById("acz").innerHTML = "Welcome: "+localStorage.theValue;
-</script>
-<div class="switch-div" style="z-index: 1;">
-<label class="switch2">
-    <input type="checkbox" onchange="toggleTheme()" id="slider">
-    <span class="slider round"></span>
-</label>

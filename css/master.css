@@ -220,8 +220,13 @@ ol li {
 	text-align: center;
 	padding-bottom: 15px;
 }
-
-tr {
+.paragraph2 h2, .paragraph2 h3, .paragraph2 p, .columnparagraph2 h2, .columnparagraph2 p {
+	width: 120%;
+	max-width: 120%;
+	right: 50px;
+	text-align: center;
+	padding-bottom: 15px;
+}tr {
 	color: var(--font-color);
 	transition: 0.5s ease;
 }
@@ -232,6 +237,14 @@ tr {
     margin: auto;
     display: flex;
     align-items: center;
+}
+.container2 {
+    width: 80%;
+    max-width: 1020px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+		padding-bottom: 15px;
 }
 
 .columnsection {
@@ -799,7 +812,7 @@ main .container {
 
 	.paragraph {
     	margin: 50px auto;
-    	width: 80%;
+    	width: 190%;
     	margin: 0 auto 30px auto;
     }
 
