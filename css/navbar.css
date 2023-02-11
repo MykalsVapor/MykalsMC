@@ -152,8 +152,8 @@ nav img {
 #mobilenavlist {
     position: fixed;
     top: -70px;
-    right: 45px;
-    width: 200px;
+    left: 45px;
+    width: 120px;
     height: 100%;
     margin: -100px 0 0 -50px;
     padding: 50px;
@@ -265,7 +265,7 @@ nav img {
     position: relative;
     display: inline-block;
 
-    left: 320px;
+    left: 230px;
 
     /*right: 205px;*/
 

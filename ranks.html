@@ -3,7 +3,7 @@
 <html lang="en" dir="ltr">
 
 
-<!-- Added by  --><meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- /Added by  -->
+<!-- Added by  --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by  -->
 <head>
         <title>Player and Premium Ranks</title>
         <meta charset="utf-8">
@@ -177,10 +177,10 @@
 
 <nav id="nav">
     <div class="container">
-        <div id="mobilenav">
+      <div id="mobilenav">
             <div id="menutoggle">
             <!--A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it.-->
-                <input type="checkbox" />
+                <input type="checkbox">
                 <!--Some spans to act as a hamburger. They are acting like a real hamburger, not that McDonalds stuff.-->
                 <span class="hamburger"></span>
                 <span class="hamburger"></span>
@@ -188,45 +188,61 @@
                 <!--Too bad the menu has to be inside of the button but hey, it's pure CSS magic.-->
                 <ul id="mobilenavlist">
                     <li><a href="index.html">Home</a></li>
+
+
+                    <li><a href="rules.html">Rules</a></li>
+                    <li><a href="https://peerboard.com/598211358/">Forum</a></li>
+                    <li><a href="https://discord.gg/deVRDu4">Discord</a></li>
+                    <li><a href="https://shop.mykalsmc.tk/">Store</a></li>
                     <li>
-                        <a href="#">Features</a>
+                        <a href="#">MykalsMC</a>
                         <ul class="mobiledd">
-                            <li><a href="map.html">Map</a></li>
-                            <li><a href="economy.html">Economy</a></li>
-                            <!-- <li><a href="/events.php">Events</a></li> -->
-                            <li><a href="claiming.html">Land Claiming</a></li>
-                            <li><a href="mypet.html">MyPet</a></li>
-                            <li><a href="warps.html">Warps</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <li><a href="rules.html">Rules</a></li>
-                        <ul class="mobiledd">
-                        	<li><a href="guide.html">Guide Book</a></li>
-                            <!-- <li><a href="/faq.php">FAQ</a></li> -->
-                        	<!--<li><a href="ranks.html">Ranks</a></li> -->
-                        	<li><a href="rules.html">Rules</a></li>
-                        	<li><a href="commandlist.html">Command list</a></li>
-                            <li><a href="mapart.html">Mapart</a></li>
-                        	<li><a href="lag.html">Reducing Lag</a></li>
-                            <li><a href="staffpowers.html">Staff Powers</a></li>
-            		        <li><a href="nicknames.html">Nicknames</a></li>
-                        	<li><a href="bans/index.html">Bans</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="https://discord.gg/ymYurTE4Qn">Discord</a></li>
-                    <li><a href="http://shop.mykalsmc.tk/category/351117/">Donate</a></li>
-                    <li>
-                        <a href="#">MyKals</a>
-                        <ul class="mobiledd">
+                            <li><a href="about.html">About us</a></li>
                             <li><a href="team.html">Team</a></li>
                             <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfd4spS8KK2VkkPG1fDlOW5yraAd8Nh4wykprCODEsxNA646A/viewform?usp=sf_link">Ban Appeal</a></li>
-                            <li><a href="blog/index.html">Blog</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
         </div>
+      <!-- <div id="mobilenav">
+            <div id="menutoggle">
+
+                <input type="checkbox">
+
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+
+                <ul id="mobilenavlist">
+                    <li><a href="index.html">Home</a></li>
+
+
+                    <li><a href="rules.html">Rules</a></li>
+                    <li><a href="https://peerboard.com/598211358/">Forum</a></li>
+                    <li><a href="https://discord.gg/deVRDu4">Discord</a></li>
+                    <li><a href="https://shop.mykalsmc.tk/">Store</a></li>
+                    <li>
+                        <a href="#">MykalsMC</a>
+                        <ul class="mobiledd">
+                            <li><a href="about.html">About us</a></li>
+                            <li><a href="team.html">Team</a></li>
+                            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfd4spS8KK2VkkPG1fDlOW5yraAd8Nh4wykprCODEsxNA646A/viewform?usp=sf_link">Ban Appeal</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      <p class = "movewelcome" id = "acz">MykalsMC</p>
+      <script>
+      document.getElementById("acz").innerHTML = "Welcome: "+localStorage.theValue;
+      </script>
+      <div class="switch-div" style="z-index: 1;">
+      <label class="switch2">
+          <input type="checkbox" onchange="toggleTheme()" id="slider">
+          <span class="slider round"></span>
+      </label>
+-->
         <a href="index.html"><img src="" alt=""></a>
         <ul id="navlist">
             <li class="navli"><a  class="navlink" href="index.html">Home</a></li>

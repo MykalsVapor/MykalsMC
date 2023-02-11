@@ -3,31 +3,10 @@
 <html lang="en" dir="ltr">
 <!-- Start of txt.me widget code -->
 
-<!-- Added by  --><meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- /Added by  -->
+<!-- Added by  --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by  -->
 
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 
-<script>
-
-(function() {
-  // Use an input to show the current value and let
-  // the user set a new one
-
-
-  // Reading the value, which was store as "theValue"
-  if (localStorage && 'theValue' in localStorage) {
-    input.value = localStorage.theValue;
-  }
-  else {
-    alert("You must register before loging in")
-    window.location.href = "login.html";
-  }
-
-  document.getElementById("setValue").onclick = function () {
-    // Writing the value
-    localStorage && (localStorage.theValue = input.value);
-  };
-})();
-</script>
 <head>
         <title>MykalsMC</title>
         <meta charset="utf-8">
@@ -49,8 +28,7 @@
         <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="css/footer.css">
         <link rel="icon" type="image/png" href="favicon.png"/>
-        <script src="js/darkmode.js"></script>
-        <script src="js/carusel.js"></script>
+
         <style>
             #video {
                 width: 50%;
@@ -228,104 +206,111 @@
             }
         </style>
     </head>
-    <body onload="start()">
-        <header id="top">
+<body onload="start()">
+  <header id="top">
 
-<nav id="nav">
 
-    <div class="container">
-      <p class = "movewelcome" id = "acz">MykalsMC</p>
-      <script>
-      document.getElementById("acz").innerHTML = "Welcome: "+localStorage.theValue;
-      </script>
-      <div class="switch-div" style="z-index: 1;">
-      <label class="switch2">
-          <input type="checkbox" onchange="toggleTheme()" id="slider">
-          <span class="slider round"></span>
-      </label>
+  <nav id="nav">
+      <div class="container">
+        <!--A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it.-->
         <div id="mobilenav">
-            <div id="menutoggle">
-            <!--A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it.-->
-                <input type="checkbox" />
-                <!--Some spans to act as a hamburger. They are acting like a real hamburger, not that McDonalds stuff.-->
-                <span class="hamburger"></span>
-                <span class="hamburger"></span>
-                <span class="hamburger"></span>
-                <!--Too bad the menu has to be inside of the button but hey, it's pure CSS magic.-->
-                <ul id="mobilenavlist">
-                    <li><a href="index.html">Home</a></li>
-
-                    <li>
-                        <li><a href="rules.html">Rules</a></li>
-                        <ul class="mobiledd">
-                        	<li><a href="guide.html">Guide Book</a></li>
-                            <!-- <li><a href="/faq.php">FAQ</a></li> -->
-                        	<!--<li><a href="ranks.html">Ranks</a></li> -->
-                        	<li><a href="rules.html">Rules</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="https://peerboard.com/598211358/">Forum</a></li>
-                    <li><a href="https://discord.gg/deVRDu4">Discord</a></li>
-
-                    <li>
-                        <a href="#">MykalsMC</a>
-                        <ul class="mobiledd">
-                            <li><a href="about.html">About us</a></li>
-                            <li><a href="team.html">Team</a></li>
-                            <li><a href="community.html">Community</a></li>
-                            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfd4spS8KK2VkkPG1fDlOW5yraAd8Nh4wykprCODEsxNA646A/viewform?usp=sf_link">Ban Appeal</a></li>
-                            <li><a href="blog/index.html">Blog</a></li>
-                        </ul>
-
-                    </li>
-                </ul>
-            </div>
-        </div>
+              <div id="menutoggle">
+              <!--A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it.-->
+                  <input type="checkbox">
+                  <!--Some spans to act as a hamburger. They are acting like a real hamburger, not that McDonalds stuff.-->
+                  <span class="hamburger"></span>
+                  <span class="hamburger"></span>
+                  <span class="hamburger"></span>
+                  <!--Too bad the menu has to be inside of the button but hey, it's pure CSS magic.-->
+                  <ul id="mobilenavlist">
+                      <li><a href="index.html">Home</a></li>
 
 
-
-        <a href="index.html"><img></a>
-        <ul id="navlist">
-            <li class="navli"><a id="currentpage" class="navlink" href="index.html">Home</a></li>
-
-            <li class="navli">
-                <li class="navli"><a class="navlink" href="rules.html">Rules</a></li>
-                <ul class="dropdown">
-                    <!--<li class="navli"><a class="navlink2" href="ranks.html">Ranks</a></li> -->
-                    <li class="navli"><a class="navlink2" href="rules.html">Rules</a></li>
-
-                </ul>
-            </li>
-
-            <li class="navli"><a class="navlink" target="_blank" rel="noopener" href="https://peerboard.com/598211358/">Forum</a></li>
-            <li class="navli"><a class="navlink" target="_blank" rel="noopener" href="https://discord.gg/deVRDu4">Discord</a></li>
-            <li class="navli">
-                <a class="navlink" target="_blank" rel="noopener" href="http://shop.mykalsmc.tk/">Store</a>
-            </li>
-            <li class="navli">
-                <a  class="navlink fakelink">MykalsMC</a>
-                <ul class="dropdown">
-                    <li class="navli"><a class="navlink2" href="about.html">About us</a></li>
-                    <li class="navli"><a class="navlink2" href="team.html">Team</a></li>
-                    <li class="navli"><a class="navlink2" target="_blank" rel="noopener" href="https://docs.google.com/forms/d/e/1FAIpQLSfd4spS8KK2VkkPG1fDlOW5yraAd8Nh4wykprCODEsxNA646A/viewform?usp=sf_link">Ban Appeal</a></li>
-
-                </ul>
-            </li>
-        </ul>
-
-            <!--
-                Darkmode switch created by Musthaq Ahamad
-                at https://codepen.io/haxzie/pen/xxKNEGM
-            -->
-
-            <br>
+                      <li><a href="rules.html">Rules</a></li>
+                      <li><a href="https://peerboard.com/598211358/">Forum</a></li>
+                      <li><a href="https://discord.gg/deVRDu4">Discord</a></li>
+                      <li><a href="https://shop.mykalsmc.tk/">Store</a></li>
+                      <li>
+                          <a href="#">MykalsMC</a>
+                          <ul class="mobiledd">
+                              <li><a href="about.html">About us</a></li>
+                              <li><a href="team.html">Team</a></li>
+                              <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfd4spS8KK2VkkPG1fDlOW5yraAd8Nh4wykprCODEsxNA646A/viewform?usp=sf_link">Ban Appeal</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+              </div>
+          </div>
 
 
+          <p class = "movewelcome" id = "acz">MykalsMC</p>
 
-            <!-- <button id="switch" onclick="toggleTheme()">Switch</button> -->
-        </div>
-    </div>
-</nav>
+
+          <script defer>
+
+          (function() {
+            // Use an input to show the current value and let
+            // the user set a new one
+
+
+            // Reading the value, which was store as "theValue"
+            if (localStorage && 'theValue' in localStorage) {
+              input.value = localStorage.theValue;
+            }
+            else {
+              alert("You must register before loging in")
+              window.location.href = "login.html";
+            }
+
+            document.getElementById("setValue").onclick = function () {
+              // Writing the value
+              localStorage && (localStorage.theValue = input.value);
+            };
+          })();
+          </script>
+          <a href="index.html"><img></a>
+
+          <ul id="navlist">
+              <li class="navli"><a id="currentpage" class="navlink" href="index.html">Home</a></li>
+
+              <li class="navli">
+                  <li class="navli"><a class="navlink" href="rules.html">Rules</a></li>
+                  <ul class="dropdown">
+                      <!--<li class="navli"><a class="navlink2" href="ranks.html">Ranks</a></li> -->
+                      <li class="navli"><a class="navlink2" href="rules.html">Rules</a></li>
+
+                  </ul>
+              </li>
+
+              <li class="navli"><a class="navlink" target="_blank" rel="noopener" href="https://peerboard.com/598211358/">Forum</a></li>
+              <li class="navli"><a class="navlink" target="_blank" rel="noopener" href="https://discord.gg/deVRDu4">Discord</a></li>
+              <li class="navli">
+                  <a class="navlink" target="_blank" rel="noopener" href="http://shop.mykalsmc.tk/">Store</a>
+              </li>
+              <li class="navli">
+                  <a  class="navlink fakelink">MykalsMC</a>
+                  <ul class="dropdown">
+                      <li class="navli"><a class="navlink2" href="about.html">About us</a></li>
+                      <li class="navli"><a class="navlink2" href="team.html">Team</a></li>
+                      <li class="navli"><a class="navlink2" target="_blank" rel="noopener" href="https://docs.google.com/forms/d/e/1FAIpQLSfd4spS8KK2VkkPG1fDlOW5yraAd8Nh4wykprCODEsxNA646A/viewform?usp=sf_link">Ban Appeal</a></li>
+
+                  </ul>
+              </li>
+          </ul>
+
+              <!--
+                  Darkmode switch created by Musthaq Ahamad
+                  at https://codepen.io/haxzie/pen/xxKNEGM
+              -->
+
+              <br>
+
+
+
+              <!-- <button id="switch" onclick="toggleTheme()">Switch</button> -->
+          </div>
+      </div>
+  </nav>
           <div class="title">
             <h1 style="display: none;">MykalsMC Server</h1>
             <img id="headerimg" src="assets/img/logos/logo.png" alt="MykalsMC Server">
@@ -349,8 +334,7 @@
                         <h2>About</h2>
                         <p>Mykal's MC Server is a Forge 1.19.2 Survival style server that utilizes the Better Minecraft BMC3 modpack.</p>
                     </div>
-                    <img src="assets/img/items/bookquill.png" style="width: 150px; align-self: center; margin: 0 auto;" alt="Alternative MykalsMC Server Logo">
-                </div>
+                    </div>
             </section>
             <!--
             <section id="section1">
@@ -399,7 +383,7 @@
             </section>
             <section class="darkmodeSection">
                 <div class="customcontainer">
-                    <img src="assets/img/logos/log.png" style="width: 121px;" alt="Alternative Mykals Server Logo">
+
                     <h2 style="margin: 20px 0; font-size: 1.8em;">play.MykalsMC.com</h2>
                     <button type="button" class="button-outer" onclick="copyToClipboard()">
                         <span class="button-inner" id="copybutton2">Copy IP</span>
@@ -440,26 +424,39 @@
   </div>
 </footer>
         <!-- JQuery and related implementation -->
-        <script type="text/javascript">
-            function downloadJSAtOnload() {
-                var element = document.createElement("script");
-                element.src = "js/jquery-3.2.1.min.js";
-                document.body.appendChild(element);
-                var element2 = document.createElement("script");
-                element2.src = "js/index.js";
-                document.body.appendChild(element2);
-                var element3 = document.createElement("script");
-                element3.src = "../s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56b811aeca643dad";
-                document.body.appendChild(element3);
-            }
-            if (window.addEventListener)
-                window.addEventListener("load", downloadJSAtOnload, false);
-            else if (window.attachEvent)
-                window.attachEvent("onload", downloadJSAtOnload);
-            else window.onload = downloadJSAtOnload;
-        </script>
-        <script src="js/darkmodefix.js"></script>
+
+
     </body>
 
 
 </html> -->
+<script type="text/javascript" defer>
+    function downloadJSAtOnload() {
+        var element = document.createElement("script");
+        element.src = "js/jquery-3.2.1.min.js";
+        document.body.appendChild(element);
+        var element2 = document.createElement("script");
+        element2.src = "js/index.js";
+        document.body.appendChild(element2);
+        var element3 = document.createElement("script");
+        element3.src = "s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56b811aeca643dad";
+        document.body.appendChild(element3);
+    }
+    if (window.addEventListener)
+        window.addEventListener("load", downloadJSAtOnload, false);
+    else if (window.attachEvent)
+        window.attachEvent("onload", downloadJSAtOnload);
+    else window.onload = downloadJSAtOnload;
+</script>
+<script src="js/darkmodefix.js" defer></script>
+
+<script src="js/darkmode.js" defer></script>
+<script src="js/carusel.js" defer></script>
+<script defer>
+document.getElementById("acz").innerHTML = "Welcome: "+localStorage.theValue;
+</script>
+<div class="switch-div" style="z-index: 1;">
+<label class="switch2">
+    <input type="checkbox" onchange="toggleTheme()" id="slider">
+    <span class="slider round"></span>
+</label>
