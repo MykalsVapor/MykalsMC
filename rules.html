@@ -1,112 +1,118 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 
-<!-- Added by  --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by  -->
+<!-- Added by  -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by  -->
+
 <head>
-        <title>Server Rules | MykalsMC Community</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Every Minecraft server has rules that players need to follow. MykalsMC tries to do things differently. No griefing, be respectful, and be mature.">
-        <meta name="keywords" content="rules,regulations,guidelines,minecraft,server,bukkit,spigot,list,griefing,swearing,caps,raiding,stealing,respectful,helpful,mature,minimodding,minecraft,survival,server,servers,community,small,vanilla,semivanilla,dynmap,mcmmo,griefing,1.20.1,mykals,alttd,play,join,find,friends,friendly,simple,private,whitelist,whitelisted,creative,worldedit">
-        <meta name="author" content="Mykals Community">
-        <meta name="theme-color" content="#1f9bde">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <!-- Twitter Card data -->
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="Community-centered Survival Minecraft Server" />
-        <meta name="twitter:description" content="Start your adventure today! We host 1.20.1 survival with features suggested by our community." />
-        <!-- Twitter Summary card images must be at least 120x120px -->
-        <meta name="twitter:image" content="assets/img/random/seo.jpg" />
-        <!-- Open Graph data -->
-        <meta property="og:title" content="Community-centered 1.20.1 Survival Minecraft Server" />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="index.html" />
-        <meta property="og:image" content="assets/img/random/seo.jpg" />
-        <meta property="og:description" content= "Start your adventure today! We host 1.20.1 survival with features suggested by our community." />
-        <meta property="og:site_name" content="Mykals Community" />
+    <title>Server Rules | MykalsMC Community</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Every Minecraft server has rules that players need to follow. MykalsMC tries to do things differently. No griefing, be respectful, and be mature.">
+    <meta name="keywords"
+        content="rules,regulations,guidelines,minecraft,server,bukkit,spigot,list,griefing,swearing,caps,raiding,stealing,respectful,helpful,mature,minimodding,minecraft,survival,server,servers,community,small,vanilla,semivanilla,dynmap,mcmmo,griefing,1.20.1,mykals,alttd,play,join,find,friends,friendly,simple,private,whitelist,whitelisted,creative,worldedit">
+    <meta name="author" content="Mykals Community">
+    <meta name="theme-color" content="#1f9bde">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Community-centered Survival Minecraft Server" />
+    <meta name="twitter:description"
+        content="Start your adventure today! We host 1.20.1 survival with features suggested by our community." />
+    <!-- Twitter Summary card images must be at least 120x120px -->
+    <meta name="twitter:image" content="assets/img/random/seo.jpg" />
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Community-centered 1.20.1 Survival Minecraft Server" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="index.html" />
+    <meta property="og:image" content="assets/img/random/seo.jpg" />
+    <meta property="og:description"
+        content="Start your adventure today! We host 1.20.1 survival with features suggested by our community." />
+    <meta property="og:site_name" content="Mykals Community" />
 
-        <link rel="stylesheet" href="css/master.css">
-        <link rel="stylesheet" href="css/navbar.css">
-        <link rel="stylesheet" href="css/footer.css">
-        <link rel="icon" type="image/png" href="favicon.png"/>
-        <script src="js/darkmode.js"></script>
-        <style>
-            header {
-                height: 460px;
-                background: url("assets/img/backgrounds/118lobby.png");
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <script src="js/darkmode.js"></script>
+    <style>
+        header {
+            height: 460px;
+            background: url("assets/img/backgrounds/118lobby.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .highlightedcontent {
+            width: 70%;
+            margin: auto;
+            background: var(--color-quaternary);
+            padding: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+            border-radius: 5px;
+            transition: 0.5s ease;
+        }
+
+        .highlightedcontent p {
+            margin-bottom: 0px !important;
+        }
+
+        .paragraph {
+            width: 100%;
+            margin-bottom: -25px;
+        }
+
+        .paragraph p {
+            margin-bottom: 15px;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .astext {
+            background: none;
+            border: none;
+            margin: 0;
+            padding: 0;
+            cursor: pointer;
+            font-family: 'opensans', sans-serif;
+        }
+
+        @media (max-width: 1000px) {
+            main .container {
+                text-align: left;
             }
 
-            .highlightedcontent {
-            	width: 70%;
-            	margin: auto;
-            	background: var(--color-quaternary);
-            	padding: 20px;
-            	margin-bottom: 30px;
-            	text-align: center;
-            	border-radius: 5px;
-                transition: 0.5s ease;
+            .list {
+                text-align: left;
+            }
+        }
+
+        @media (max-width: 670px) {
+            main .container {
+                text-align: center;
             }
 
-            .highlightedcontent p {
-            	margin-bottom: 0px !important;
+            .list {
+                margin-left: 50px;
             }
+        }
+    </style>
+</head>
 
-            .paragraph {
-                width: 100%;
-                margin-bottom: -25px;
-            }
+<body>
+    <header id="top">
 
-            .paragraph p {
-                margin-bottom: 15px;
-            }
-
-            .hide {
-                display: none;
-            }
-
-            .astext {
-                background:none;
-                border:none;
-                margin:0;
-                padding:0;
-                cursor: pointer;
-                font-family: 'opensans', sans-serif;
-            }
-
-            @media (max-width: 1000px) {
-                main .container {
-                    text-align: left;
-                }
-
-                .list {
-                    text-align: left;
-                }
-            }
-
-            @media (max-width: 670px) {
-                main .container {
-                    text-align: center;
-                }
-
-                .list {
-                    margin-left: 50px;
-                }
-            }
-        </style>
-    </head>
-    <body>
-        <header id="top">
-
-          <nav id="nav">
+        <nav id="nav">
             <div class="container">
-              <div id="mobilenav">
+                <div id="mobilenav">
                     <div id="menutoggle">
-                    <!--A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it.-->
+                        <!--A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it.-->
                         <input type="checkbox">
                         <!--Some spans to act as a hamburger. They are acting like a real hamburger, not that McDonalds stuff.-->
                         <span class="hamburger"></span>
@@ -118,30 +124,19 @@
 
 
                             <li><a href="rules.html">Rules</a></li>
-                            <li><a href="https://peerboard.com/598211358/">Forum</a></li>
                             <li><a href="https://discord.gg/deVRDu4">Discord</a></li>
                             <li><a href="https://shop.mykalsmc.com/">Store</a></li>
-                            <li>
-                                <a href="#">MykalsMC</a>
-                                <ul class="mobiledd">
-                                    <li><a href="about.html">About us</a></li>
-                                    <li><a href="team.html">Team</a></li>
-                                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfd4spS8KK2VkkPG1fDlOW5yraAd8Nh4wykprCODEsxNA646A/viewform?usp=sf_link">Ban Appeal</a></li>
-                                </ul>
-                            </li>
+                            <li><a href="about.html">About us</a></li>
+                            <li><a href="team.html">Team</a></li>
                         </ul>
                     </div>
                 </div>
-              <p class = "movewelcome2" id = "acz">MykalsMC</p>
-              <script>
-              document.getElementById("acz").innerHTML = "Welcome: "+localStorage.theValue;
-              </script>
-              <div class="switch-div" style="z-index: 1;">
-              <label class="switch2">
-                  <input type="checkbox" onchange="toggleTheme()" id="slider">
-                  <span class="slider round"></span>
-              </label>
-              <!-- <div id="mobilenav">
+                <div class="switch-div" style="z-index: 1;">
+                    <label class="switch2">
+                        <input type="checkbox" onchange="toggleTheme()" id="slider">
+                        <span class="slider round"></span>
+                    </label>
+                    <!-- <div id="mobilenav">
                     <div id="menutoggle">
 
                         <input type="checkbox">
@@ -179,186 +174,224 @@
                   <span class="slider round"></span>
               </label>
       -->
-                  <a href="index.html"><img src="" alt=""></a>
-                  <ul id="navlist">
-                      <li class="navli"><a  class="navlink" href="index.html">Home</a></li>
-                      <li class="navli">
+                    <a href="index.html"><img src="" alt=""></a>
+                    <ul id="navlist">
+                        <li class="navli"><a class="navlink" href="index.html">Home</a></li>
+                        <li class="navli">
 
-                      </li>
-                      <li class="navli">
-                          <li class="navli"><a id="currentpage" class="navlink" href="rules.html">Rules</a></li>
-                          <ul class="dropdown">
-                              <!--<li class="navli"><a class="navlink2" href="ranks.html">Ranks</a></li> -->
-                              <li class="navli"><a class="navlink2" href="rules.html">Rules</a></li>
-                          </ul>
-                      </li>
-                      <li class="navli"><a class="navlink" target="_blank" rel="noopener" href="https://peerboard.com/598211358/">Forum</a></li>
-                      <li class="navli"><a class="navlink" target="_blank" rel="noopener" href="https://discord.gg/deVRDu4">Discord</a></li>
-                      <li class="navli">
-                          <a class="navlink" target="_blank" rel="noopener" href="http://shop.mykalsmc.com/category/351117">Store</a>
-                      </li>
-                      <li class="navli">
+                        </li>
+                        <li class="navli">
+                        <li class="navli"><a id="currentpage" class="navlink" href="rules.html">Rules</a></li>
+                        </li>
+                        <li class="navli"><a class="navlink" target="_blank" rel="noopener"
+                                href="https://discord.gg/deVRDu4">Discord</a></li>
+                        <li class="navli">
+                            <a class="navlink" target="_blank" rel="noopener"
+                                href="http://shop.mykalsmc.com/category/351117">Store</a>
+                        </li>
+                        <li class="navli"><a class="navlink" href="about.html">About us</a></li>
+                        <li class="navli"><a class="navlink" href="team.html">Team</a></li>
 
-                      <li class="navli">
-                          <a  class="navlink fakelink">MykalsMC</a>
-                          <ul class="dropdown">
-                              <li class="navli"><a class="navlink2" href="about.html">About us</a></li>
-                              <li class="navli"><a class="navlink2" href="team.html">Team</a></li>
-                              <li class="navli"><a class="navlink2" target="_blank" rel="noopener" href="https://docs.google.com/forms/d/e/1FAIpQLSfd4spS8KK2VkkPG1fDlOW5yraAd8Nh4wykprCODEsxNA646A/viewform?usp=sf_link">Ban Appeal</a></li>
-                          </ul>
-                      </li>
-                  </ul>
-
-              </div>
-          </nav>
-            <div class="title">
-                <h1>Server Rules</h1>
-
-            </div>
-        </header>
-        <main>
-            <section class="darkmodeSection">
+                    </ul>
 
                 </div>
-            </section>
-            <section class="darkmodeSection">
-                <div class="container">
-                    <div class="paragraph">
-                        <h2>Treat Others With Respect</h2>
-                        <ul class="fullpagelist">
-                            <li>Personal attacks and harassment targeting players or staff will not be tolerated.</li>
-                            <li>Sexist, racist, homophobic, and broad, offensive generalizations about groups of people are simply not allowed.</li>
-                            <li>Any word blocked by a filter is never allowed no matter how it's written, even if it gets around the filter itself.</li>
-                            <li>You can talk about current events and real-world topics. However, if staff recognizes the topic is causing players to become uncomfortable, they may shut the conversation down.
-                                <ul class="fullpagelist2">
-                                    <li>You are welcome to take conversations regarding sensitive topics to dm's and party chat with people who want to be involved, or off the server.</li>
-                                </ul>
-                            </li>
-                            <li>Don't spam. This includes excessive use of chat, caps, player-related commands, or any other medium.</li>
-                            <li>Keep others in mind when talking in public chat. Personal and/or exclusive conversations are often better suited for DMs or party chat. Staff may direct you there if they feel your conversation is clogging chat.
-                                <ul class="fullpagelist2">
-                                    <li>Since messages in global chat get sent to every server we want to avoid spam and unnecessary messages. If you send advertisements they cannot require a bid in response, all bidding needs to be done in a single server chat or through the Discord. Other conversation that can clog up the global chat should also be kept to a single server, you can have minor conversations in global chat but it should not become long or clog up the entire chat. We highly encourage the use of private messages or party chats if you want to have longer conversations across the different servers!</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section class="darkmodeSection">
+        </nav>
+        <div class="title">
+            <h1>Server Rules</h1>
 
-                </div>
-            </section>
-            <section class="darkmodeSectionThree">
-                <div class="container">
-                    <div class="paragraph">
-                        <h2>Play Fair</h2>
-                        <p>Everyone should be able to feel proud of their achievements on the server. This is only possible if everyone plays fair. One player cheating can diminish the accomplishments of everyone else.</p>
-                        <ul class="fullpagelist">
-                            <li>Do not attempt to trick or scam others during item trades or economy transactions. Additionally, do not bid on an item you do not plan to buy - if you offer to pay more for something that someone else has already made an offer on, that is considered "bidding" and all bids are final! As soon as an auction goes public, all bids must remain public.</li>
-                            <li>Alternate (“alt”) accounts are generally not allowed. We may approve their use on a case-by-case basis. Using an alt account to bypass a punishment can result in a longer ban. You are responsible for the activity of your account, as well as any consequences brought forward from breaking our rules.
-                                <ul class="fullpagelist2">
-                                    <li>You must be the legal owner of your Minecraft account, or have permission to use it by the legal owner.</li>
-                                </ul>
-                            </li>
-                            <li>Bypassing the automatic AFK system is prohibited. Additionally, leaving your game unattended while sitting near a mob spawner, or any other automated system, ("AFK grinding") is not allowed. You may use automated grinders as long as you are present while using them.</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section class="darkmodeSection">
-                <div class="container">
-                    <div class="paragraph">
-                        <h2>Hacks and Mods Policy</h2>
-                        <p>Any hack or mod that gives you an unfair advantage in the game is not allowed. Additionally, most vanilla exploits are allowed – unless they give you materials you are not supposed to have (such as duplication glitches). Exploiting any non-vanilla features (our plugins) is prohibited. You may use any mods that fit into the categories below.</p>
-                        <p style="font-family: 'opensans-bold', sans-serif;">We allow modifications in the following categories:</p>
-                        <ul class="list">
-                            <li>Mods that improve client performance (Optifine)</li>
-                            <li>Minimaps, as long as it doesn't show anything you can't normally see (caves, dungeon locations, etc.)</li>
-                            <li>Aesthetic modifications that do not give you an unfair advantage or change gameplay (Shaders)</li>
-                            <li>Inventory management systems, such as automatic organization</li>
-                            <li>Mods for recording gameplay (ReplayMod)</li>
-                            <li>The Litematica mod (auto-build and easy place features are prohibited)</li>
-                            <li>Armor and status HUDs (as long as info shown is accessible in vanilla)</li>
-                            <li>Macros (setting certain actions to specific buttons)
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <section class="darkmodeSectionThree">
-                <div class="container">
-                    <div class="paragraph">
-                        <h2>Do Not Impersonate Staff</h2>
-                        <p>Do not impersonate staff members or portray yourself as one when you are not. It is ok to share the rules with others, but please do not try to force others to follow them - reach out to a staff member if you need help.</p>
-            			<p>Do not mini-mod. If a staff member is already helping a player please don't interfere. We appreciate players trying to help out other players but if staff is already helping it can cause confusion. You can remind players of the rules, but remember that you cannot enforce them or punish players.</p>
-                        <p>Do not make "official" MykalsMC products or events. If you make something related to MykalsMC please make sure it's clear that it is not an official MykalsMC thing. We cannot moderate unofficial things and cannot be responsible for what happens related to them!</p>
-                    </div>
-                </div>
-            </section>
-            <section class="darkmodeSection">
-                <div class="container">
-                    <div class="paragraph">
-                        <h2>No Self-Promotion</h2>
-                        <p>Creators are awesome! Creators leeching off of others to promote their own work are not. You may share content you've created as long as you are not using our services merely as a means of promoting your own content. We may deny an individual from promoting their work if we feel this is being abused.</p>
-                        <p>Never promote other Minecraft servers, Realms, or Discord servers in any of our public chats. You may share this type of content in a private message, but only if the recipient requested the information first</p>
-                    </div>
-                </div>
-            </section>
-
-            <a href="#top" id="scrollupbutton">
-                <span></span>
-                <p style="display: none;">Scroll Down</p>
-            </a>
-        </main>
-        <footer>
-        <div id="footer">
-          <div id="footerinner">
-            <div id="footertext">
-              <h2>ABOUT US</h2>
-              <p>Mykal's MC Server is a Paper 1.20.1 survival style server. We have an economy, land claims, a shop, mcmmo, player vaults, ranks, warps, PlotsSquared, and much more coming soon! This server just reset so nothing has been claimed/looted. Come join us for an adventure! We are currently looking for Mods, Helpers, and Administrators. If you have any interest in helping out, you can apply on the staff application channel in our Discord. discord.gg/deVRDu4 Join our Discord to get whitelisted, however it's not being enforced just yet.</p>
-              <div class="followus" style="height: 35px; display: flex; align-items: flex-end;">
-                <a target="_blank" rel="noopener" href="https://discord.gg/deVRDu4">
-                <img src="assets/img/logos/discord.png" alt="Discord Button"></img>
-                </a>
-              </div>
-            </div>
-            <div class="footernav">
-              <h2>COMMUNITY</h2>
-              <ul>
-                <li><a target="_blank" rel="noopener" href="https://discord.gg/deVRDu4">Discord</a></li>
-              </ul>
-            </div>
-            <div class="footernav">
-              <h2>SERVER</h2>
-              <ul>
-                <li><a href="team.html">Staffing Team</a></li>
-              </ul>
-            </div>
-          </div>
-          <p id="copyright">Copyright © 2022 MykalsMC. All rights Reserved. Not affiliated with Mojang.</p>
         </div>
-        </footer>
-              <!-- JQuery and related implementation -->
-              <script type="text/javascript">
-                  function downloadJSAtOnload() {
-                      var element = document.createElement("script");
-                      element.src = "js/jquery-3.2.1.min.js";
-                      document.body.appendChild(element);
-                      var element2 = document.createElement("script");
-                      element2.src = "js/index.js";
-                      document.body.appendChild(element2);
-                      var element3 = document.createElement("script");
-                      element3.src = "../s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56b811aeca643dad";
-                      document.body.appendChild(element3);
-                  }
-                  if (window.addEventListener)
-                      window.addEventListener("load", downloadJSAtOnload, false);
-                  else if (window.attachEvent)
-                      window.attachEvent("onload", downloadJSAtOnload);
-                  else window.onload = downloadJSAtOnload;
-              </script>
-              <script src="js/darkmodefix.js"></script>
-          </body>
+    </header>
+    <main>
+        <section class="darkmodeSection">
+
+            </div>
+        </section>
+        <section class="darkmodeSection">
+            <div class="container">
+                <div class="paragraph">
+                    <h2>Treat Others With Respect</h2>
+                    <ul class="fullpagelist">
+                        <li>Personal attacks and harassment targeting players or staff will not be tolerated.</li>
+                        <li>Sexist, racist, homophobic, and broad, offensive generalizations about groups of people are
+                            simply not allowed.</li>
+                        <li>Any word blocked by a filter is never allowed no matter how it's written, even if it gets
+                            around the filter itself.</li>
+                        <li>You can talk about current events and real-world topics. However, if staff recognizes the
+                            topic is causing players to become uncomfortable, they may shut the conversation down.
+                            <ul class="fullpagelist2">
+                                <li>You are welcome to take conversations regarding sensitive topics to dm's and party
+                                    chat with people who want to be involved, or off the server.</li>
+                            </ul>
+                        </li>
+                        <li>Don't spam. This includes excessive use of chat, caps, player-related commands, or any other
+                            medium.</li>
+                        <li>Keep others in mind when talking in public chat. Personal and/or exclusive conversations are
+                            often better suited for DMs or party chat. Staff may direct you there if they feel your
+                            conversation is clogging chat.
+                            <ul class="fullpagelist2">
+                                <li>Since messages in global chat get sent to every server we want to avoid spam and
+                                    unnecessary messages. If you send advertisements they cannot require a bid in
+                                    response, all bidding needs to be done in a single server chat or through the
+                                    Discord. Other conversation that can clog up the global chat should also be kept to
+                                    a single server, you can have minor conversations in global chat but it should not
+                                    become long or clog up the entire chat. We highly encourage the use of private
+                                    messages or party chats if you want to have longer conversations across the
+                                    different servers!</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="darkmodeSection">
+
+            </div>
+        </section>
+        <section class="darkmodeSectionThree">
+            <div class="container">
+                <div class="paragraph">
+                    <h2>Play Fair</h2>
+                    <p>Everyone should be able to feel proud of their achievements on the server. This is only possible
+                        if everyone plays fair. One player cheating can diminish the accomplishments of everyone else.
+                    </p>
+                    <ul class="fullpagelist">
+                        <li>Do not attempt to trick or scam others during item trades or economy transactions.
+                            Additionally, do not bid on an item you do not plan to buy - if you offer to pay more for
+                            something that someone else has already made an offer on, that is considered "bidding" and
+                            all bids are final! As soon as an auction goes public, all bids must remain public.</li>
+                        <li>Alternate (“alt”) accounts are generally not allowed. We may approve their use on a
+                            case-by-case basis. Using an alt account to bypass a punishment can result in a longer ban.
+                            You are responsible for the activity of your account, as well as any consequences brought
+                            forward from breaking our rules.
+                            <ul class="fullpagelist2">
+                                <li>You must be the legal owner of your Minecraft account, or have permission to use it
+                                    by the legal owner.</li>
+                            </ul>
+                        </li>
+                        <li>Bypassing the automatic AFK system is prohibited. Additionally, leaving your game unattended
+                            while sitting near a mob spawner, or any other automated system, ("AFK grinding") is not
+                            allowed. You may use automated grinders as long as you are present while using them.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="darkmodeSection">
+            <div class="container">
+                <div class="paragraph">
+                    <h2>Hacks and Mods Policy</h2>
+                    <p>Any hack or mod that gives you an unfair advantage in the game is not allowed. Additionally, most
+                        vanilla exploits are allowed – unless they give you materials you are not supposed to have (such
+                        as duplication glitches). Exploiting any non-vanilla features (our plugins) is prohibited. You
+                        may use any mods that fit into the categories below.</p>
+                    <p style="font-family: 'opensans-bold', sans-serif;">We allow modifications in the following
+                        categories:</p>
+                    <ul class="list">
+                        <li>Mods that improve client performance (Optifine)</li>
+                        <li>Minimaps, as long as it doesn't show anything you can't normally see (caves, dungeon
+                            locations, etc.)</li>
+                        <li>Aesthetic modifications that do not give you an unfair advantage or change gameplay
+                            (Shaders)</li>
+                        <li>Inventory management systems, such as automatic organization</li>
+                        <li>Mods for recording gameplay (ReplayMod)</li>
+                        <li>The Litematica mod (auto-build and easy place features are prohibited)</li>
+                        <li>Armor and status HUDs (as long as info shown is accessible in vanilla)</li>
+                        <li>Macros (setting certain actions to specific buttons)
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="darkmodeSectionThree">
+            <div class="container">
+                <div class="paragraph">
+                    <h2>Do Not Impersonate Staff</h2>
+                    <p>Do not impersonate staff members or portray yourself as one when you are not. It is ok to share
+                        the rules with others, but please do not try to force others to follow them - reach out to a
+                        staff member if you need help.</p>
+                    <p>Do not mini-mod. If a staff member is already helping a player please don't interfere. We
+                        appreciate players trying to help out other players but if staff is already helping it can cause
+                        confusion. You can remind players of the rules, but remember that you cannot enforce them or
+                        punish players.</p>
+                    <p>Do not make "official" MykalsMC products or events. If you make something related to MykalsMC
+                        please make sure it's clear that it is not an official MykalsMC thing. We cannot moderate
+                        unofficial things and cannot be responsible for what happens related to them!</p>
+                </div>
+            </div>
+        </section>
+        <section class="darkmodeSection">
+            <div class="container">
+                <div class="paragraph">
+                    <h2>No Self-Promotion</h2>
+                    <p>Creators are awesome! Creators leeching off of others to promote their own work are not. You may
+                        share content you've created as long as you are not using our services merely as a means of
+                        promoting your own content. We may deny an individual from promoting their work if we feel this
+                        is being abused.</p>
+                    <p>Never promote other Minecraft servers, Realms, or Discord servers in any of our public chats. You
+                        may share this type of content in a private message, but only if the recipient requested the
+                        information first</p>
+                </div>
+            </div>
+        </section>
+
+        <a href="#top" id="scrollupbutton">
+            <span></span>
+            <p style="display: none;">Scroll Down</p>
+        </a>
+    </main>
+    <footer>
+        <div id="footer">
+            <div id="footerinner">
+                <div id="footertext">
+                    <h2>ABOUT US</h2>
+                    <p>Mykal's MC Server is a Paper 1.20.1 survival style server. We have an economy, land claims, a
+                        shop, mcmmo, player vaults, ranks, warps, PlotsSquared, and much more coming soon! This server
+                        just reset so nothing has been claimed/looted. Come join us for an adventure! We are currently
+                        looking for Mods, Helpers, and Administrators. If you have any interest in helping out, you can
+                        apply on the staff application channel in our Discord. discord.gg/deVRDu4 Join our Discord to
+                        get whitelisted, however it's not being enforced just yet.</p>
+                    <div class="followus" style="height: 35px; display: flex; align-items: flex-end;">
+                        <a target="_blank" rel="noopener" href="https://discord.gg/deVRDu4">
+                            <img src="assets/img/logos/discord.png" alt="Discord Button"></img>
+                        </a>
+                    </div>
+                </div>
+                <div class="footernav">
+                    <h2>COMMUNITY</h2>
+                    <ul>
+                        <li><a target="_blank" rel="noopener" href="https://discord.gg/deVRDu4">Discord</a></li>
+                    </ul>
+                </div>
+                <div class="footernav">
+                    <h2>SERVER</h2>
+                    <ul>
+                        <li><a href="team.html">Staffing Team</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p id="copyright">Copyright © 2022 MykalsMC. All rights Reserved. Not affiliated with Mojang.</p>
+        </div>
+    </footer>
+    <!-- JQuery and related implementation -->
+    <script type="text/javascript">
+        function downloadJSAtOnload() {
+            var element = document.createElement("script");
+            element.src = "js/jquery-3.2.1.min.js";
+            document.body.appendChild(element);
+            var element2 = document.createElement("script");
+            element2.src = "js/index.js";
+            document.body.appendChild(element2);
+            var element3 = document.createElement("script");
+            element3.src = "../s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56b811aeca643dad";
+            document.body.appendChild(element3);
+        }
+        if (window.addEventListener)
+            window.addEventListener("load", downloadJSAtOnload, false);
+        else if (window.attachEvent)
+            window.attachEvent("onload", downloadJSAtOnload);
+        else window.onload = downloadJSAtOnload;
+    </script>
+    <script src="js/darkmodefix.js"></script>
+</body>
 
 
-        </html>
+</html>

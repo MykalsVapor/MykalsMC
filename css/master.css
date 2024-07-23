@@ -221,7 +221,7 @@ ol li {
 	padding-bottom: 15px;
 }
 .paragraph2 h2, .paragraph2 h3, .paragraph2 p, .columnparagraph2 h2, .columnparagraph2 p {
-	width: 120%;
+	/* width: 120%; */
 	max-width: 120%;
 	right: 50px;
 	text-align: center;
