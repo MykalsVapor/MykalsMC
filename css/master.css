@@ -346,7 +346,7 @@ main .container {
 .title {
 	height: calc(100% - 110px);
 	display: flex;
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; */
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
